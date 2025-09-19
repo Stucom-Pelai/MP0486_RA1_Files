@@ -37,8 +37,16 @@ public class Main {
 			float precio = sc.nextFloat();
 			System.out.print("Introduzca Descripción del producto: ");
 			String desc = sc.next();
+			System.out.print("Introduzca si esta disponible el producto (Disponible /No Disponible): ");
+			String avail = sc.next();
+			boolean available;
+			if (avail.equalsIgnoreCase("Disponible")) {
+				available = true;
+			} else {
+				available = false;
+			}
 			//Añado elementos al array
-			productos.add(new Producto(precio,nombreProducto,desc));
+			productos.add(new Producto(precio,nombreProducto,desc,available));
 			//Escribo en el fichero la información de cada producto
 			pw.append(productos.get(i).toString());
 		}
