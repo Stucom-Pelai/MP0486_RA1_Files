@@ -18,3 +18,12 @@ Mi iteración: 4: e
 [Nombre]: Ratón; [Precio]: 12.0; [Descripcion]: Gamer
 
 [Nombre]: Ordenador; [Precio]: 200.0; [Descripcion]: Workstation
+
+[Nombre]: qs; [Precio]: 32.0; [Descripcion]: qwe
+[Availability]:true
+
+[Nombre]: ewq; [Precio]: 12.0; [Descripcion]: wqe
+[Availability]:true
+
+[Nombre]: eqw; [Precio]: 12.0; [Descripcion]: qwe
+[Availability]:true
