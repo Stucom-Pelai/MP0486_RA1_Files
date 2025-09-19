@@ -18,3 +18,18 @@ Mi iteración: 4: e
 [Nombre]: Ratón; [Precio]: 12.0; [Descripcion]: Gamer
 
 [Nombre]: Ordenador; [Precio]: 200.0; [Descripcion]: Workstation
+
+[Nombre]: Manzana; [Precio]: 20.0; [Descripcion]: Comida
+[Disponible]: true
+
+[Nombre]: PC; [Precio]: 25.0; [Descripcion]: Informatica
+[Disponible]: true
+
+[Nombre]: Boli; [Precio]: 5.0; [Descripcion]: Cole
+[Disponible]: true
+
+[Nombre]: Manzana; [Precio]: 30.0; [Descripcion]: Comida
+[Disponible]: true
+
+[Nombre]: Cascos; [Precio]: 300.0; [Descripcion]: Informatica
+[Disponible]: true

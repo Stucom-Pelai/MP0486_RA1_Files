@@ -25,7 +25,7 @@ public class Main {
 	 * */
 	public static void escribirFichero(File f) throws IOException {
 		//Se puede escribir en el fichero.
-		FileWriter fw = new FileWriter(f,true);
+		FileWriter fw = new FileWriter(f, true);
 		PrintWriter pw = new PrintWriter(fw);
 		Scanner sc = new Scanner(System.in);
 		ArrayList<Producto> productos = new ArrayList<>();
@@ -37,10 +37,12 @@ public class Main {
 			float precio = sc.nextFloat();
 			System.out.print("Introduzca Descripción del producto: ");
 			String desc = sc.next();
+			boolean disponible = true;
 			//Añado elementos al array
-			productos.add(new Producto(precio,nombreProducto,desc));
+			productos.add(new Producto(precio,nombreProducto,desc,disponible));
 			//Escribo en el fichero la información de cada producto
 			pw.append(productos.get(i).toString());
+
 		}
 		pw.close();
 		fw.close();
@@ -59,15 +61,16 @@ public class Main {
 			f.createNewFile();
 		}
 		
-		if(f.canRead()) {
-			leerFichero(f);
-		}else if(f.canWrite()) {
+		if(f.canWrite()) {
 			escribirFichero(f);
+		}else if(f.canRead()) {
+			leerFichero(f);
 		}else {
 			System.out.println("NO SE PUEDE ESCRIBIR EN EL ARCHIVO");
 		}
 		
 		
 	}
+	
 
 }
