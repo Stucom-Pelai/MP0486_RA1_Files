@@ -38,7 +38,7 @@ public class Main {
 			System.out.print("Introduzca Descripción del producto: ");
 			String desc = sc.next();
 			//Añado elementos al array
-			productos.add(new Producto(precio,nombreProducto,desc));
+			productos.add(new Producto(precio,nombreProducto,desc, true));
 			//Escribo en el fichero la información de cada producto
 			pw.append(productos.get(i).toString());
 		}
